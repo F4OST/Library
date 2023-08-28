@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+  <title>Library Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="mainContainer">
+    <div id="nav" style="display: flex;">
+      <button id="addButton">Add</button>
+      <p id="footer-text">
+        Made By
+        <a href="https://github.com/F4OST" target="_blank" id="dev-link">F4OST</a>
+    </p>
+
+    <img src="./images/github.png " alt="github logo" width="40" height="40" />
+      <button id="deleteButton">delete</button>
+        <div id="formContainer" style="display: none">
+        <input type="text" data-title="title" placeholder="Book Title"  />
+        <input type="text" data-author="author" placeholder="Author Name"  />
+        <input type="number" min="1" data-page="page" placeholder="Number of Pages"  />
+        <button  id="saveButton">Save</button>
+        </div>
+    </div>
+    <div id="mainContent"></div>
+    <div id="footer"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #333;
+  width: 100%;
+  position: relative;
+}
+button {
+  width: 41%;
+  font-size: 14px;
+}
+#formContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 17px 19px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slide-top-animation {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+input,
+button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+#mainContent {
+  position: relative;
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 2fr;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.book {
+  color: rgb(255, 255, 255);
+  outline: 1px red solid;
+  background-color: #fc5147;
+
+  width: 85%;
+  height: 17.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 9px -6px 18px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#author {
+  margin-top: -13px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  color: #02141e;
+}
+
+#title {
+  margin-top: 17px;
+  font-size: 3rem;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  color: #02141e;
+  font-weight: bold;
+}
+span {
+  position: relative;
+  width: 75%;
+}
+
+span::after {
+  content: "";
+  position: absolute;
+  bottom: 37px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #02141e;
+}
+
+#page {
+  margin-top: -5px;
+  color: white;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+}
+#footer-text {
+  width: 34%;
+  letter-spacing: 0.5em;
+  margin-right: 7px;
+}
+
+#dev-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
